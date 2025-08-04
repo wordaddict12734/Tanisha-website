@@ -128,51 +128,46 @@ span{
 }
 /*social icons*/
 .parent {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .child {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform-style: preserve-3d;
-  transition: 0.3s ease-in-out;
-  border-radius: 50%;
-  margin: 0 5px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .child:hover {
   background-color: white;
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-  transform: perspective(180px) rotateX(60deg) translateY(2px);
-  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(1, 49, 182, 0.4);
 }
 
-button {
+.button {
   border: none;
   background-color: transparent;
   font-size: 20px;
-}
-
-.button:hover {
-  width: inherit;
-  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
-  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-/*hire me*/
+.button:hover {
+  transform: scale(1.1);
+}
+
+
+/*Download CV*/
 button {
   position: relative;
   width: 11em;
@@ -339,60 +334,21 @@ button:hover #clip {
   }
 }
 /*text animation*/
-.text-animation{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-.text-animation span{
-    position: relative;
-}
-.text-animation span::before{
-    content: 'Web Developer';
-    color: var(--main-color);
-    animation: words 20s infinite;
-}
-.text-animation span::after{
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);
-    }
-}
-@keyframes words {
-    0%, 20% {
-        content: 'Game Developer';
-    }
-    21%, 40% {
-        content: 'Graphic Designer';
-    }
-    41%, 60% {
-        content: 'Content Manager';
-    }
-    61%, 80% {
-        content: 'Writer';
-    }
-    81%, 100% {
-        content: 'Web Developer';
-    }
+
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: calc(100% + 8px);
-    }
+#changing-text {
+  border-right: 2px solid var(--main-color);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
 }
+
 
 /*SKILLS*/
 
@@ -516,6 +472,8 @@ button:hover #clip {
               0 0 50px var(--main-color),
               0 0 70px var(--main-color);
 }
+
+
 .footer{
     position: relative;
     bottom: 0;
@@ -608,10 +566,6 @@ button:hover #clip {
   animation: bounce_613 0.4s linear;
 }
 
-.card .social-link4:hover {
-  background-color: #ff8000;
-  animation: bounce_613 0.4s linear;
-}
 
 @keyframes bounce_613 {
   40% {
@@ -630,6 +584,8 @@ button:hover #clip {
     transform: scale(1);
   }
 }
+
+
 
 /*EDUCATION*/
 .Education .title-s{
