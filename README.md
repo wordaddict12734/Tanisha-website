@@ -38,6 +38,3 @@ Feel free to connect with me:
 📧 Email: [Send me Email](mahisengupta715@gmail.com)
 
 💼 LinkedIn: [Visit my LinkedIn](https://www.linkedin.com/in/tanisha-sengupta-8a0a04297/)
-
-│   └── images, icons, etc.
-└── README.md
