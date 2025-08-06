@@ -9,8 +9,6 @@ This is where I showcase my work, skills, and passion for web development.
 
 Hi, I'm **Tanisha Sengupta**, a Computer Science and Engineering student passionate about creating websites that look great and function seamlessly.
 
-I've loved computers since I was little, so studying Computer Science was a natural choice. Now, I'm diving deep into **HTML**, **CSS**, and **JavaScript** to bring my ideas to life.
-
 I enjoy solving problems and devising innovative solutions. Whether it's a class project or a personal one, I give it my all to make it top-notch.
 
 Excited about the ever-changing tech world, I'm ready to dive in and make my mark.  
